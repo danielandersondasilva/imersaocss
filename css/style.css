@@ -1,12 +1,43 @@
+/*reset do css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-image: url('/img/images.jpg');
+    background-image: url('/img/fundo.jpg');
     background-size: auto 120vh;
     font-family: Arial;
     height: 100vh;
 }
 
+/*se a tela tiver pelo menos vai carregar esses estilos */
+@media (min-width:400px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .menu {
     background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
 }
 
 .menu ul {
@@ -16,6 +47,11 @@ body {
 
 .menu li {
     list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
 }
 
 a {
@@ -33,6 +69,15 @@ a:hover {
     text-align: center;
 }
 
+.site-title {
+    font-size: 4em;
+}
+
 .site-subtitle {
     font-style: italic;
+}
+
+.img-portfolio {
+    height: 180px;
+    width: 180px;
 }
